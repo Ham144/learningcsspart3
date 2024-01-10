@@ -1,0 +1,217 @@
+:root{
+    --primary-color: #a9f395;
+    --color: #d8dcd7;
+    --paragraf: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --title: Georgia, 'Times New Roman', Times, serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--paragraf);
+}
+
+body{
+    background-color: var(--primary-color);
+    display: inline-block;
+    padding: 2%;    
+}
+
+
+.parent-container{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-color: var(--color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+    
+nav{
+    display: inline-block;
+    width: 90%;
+}
+
+.logo h1{
+    float: left;
+    padding-top: 30px;
+    font-size: 2.5rem;
+}
+
+.menus{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2.5rem;
+    align-items: flex-end;
+}
+
+
+.menus span{
+    width: 33px;
+    gap: 5px;
+    height: 11px;
+    border: 3px solid var(--primary-color);
+    background-color: black;
+}
+.dropdown-content{
+    width: 20px;
+    height: 20px;
+    font-size: 1px;
+    transform: translateY(-29px);
+    z-index: -1;
+}
+
+.dropdown-content{
+    font-size: 1.8rem;
+    z-index: 1;
+    width: 50px;
+    display: block;
+    margin: 4px;
+    padding: 11px;
+}   
+
+.dropdown-content a{
+    background-color: #fff;
+    padding: 2px;
+    border: 2px solid;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 50px 100px;
+    align-self: start;
+}
+
+main .title-container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 30px;
+}
+
+.title-container h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: var(--title);
+}
+
+p span{
+    background-color: rgb(6, 249, 156);
+}
+
+.title-container p{
+    font-size: larger;
+    font-weight: lighter;
+    line-height: 2rem;
+    filter: opacity(60%);
+    font-size: 1.7rem;
+}
+
+.galeri{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-galeri{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 7rem;
+}
+.image{
+    background-image: url(contoh\ pesawat.jpg);
+    width: 600px;
+    height: 300px;
+    background-position: center;
+    background-size: contain;
+    box-shadow: 6px 5px 4px rgba(47, 49, 58, 0.649);
+}
+
+.second-galeri{
+    margin-top: 3rem;
+    width: 80%;
+}
+
+.second-galeri .image{
+    width: 400px;
+    height: 300px;
+    box-shadow: none;
+    background-size: cover;
+    border-radius: 12%;
+    font-size: 2.4rem;
+    font-family: var(--title);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.second-galeri .image b{
+    position: absolute;
+    transform: translate(150px, -50px);
+    filter: opacity(40%);
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(93, 93, 91);
+    justify-content: space-between;
+    padding: 150px 4px 150px 4px;
+}
+
+.footer1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-wrap: wrap;
+    width: 40%;
+}
+.title1{
+    text-transform: uppercase;
+    font-family:var(--title);
+    font-size: 3rem;
+}
+
+.paragraf-title1{
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.634);
+}
+
+.footer2{
+    display: flex;
+    font-size: 1.1rem;
+    width: 600px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.footer2-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer2 ul{
+    gap: 2rem;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.footer2 li{
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.69);
+}
